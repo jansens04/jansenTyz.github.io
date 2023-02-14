@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jansen Store</title>
+    <link rel="stylesheet" href="style.css ">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="hero">
+                <h2 class="heading">Jansen Shop</h2>
+                <p class="sub-heading">T-Shirt & Shoes</p>
+            </div>
+            <div class="features features-1">
+                <h4 class="price">IDR 150K</h4>
+                <p class="item">T-Shirt</p>
+            </div>
+            <div class="features features-2">
+                <h4 class="price">IDR 250K</h4>
+                <p class="item">Shoes</p>
+            </div>
+        </header>
+
+        <!-- Navbar -->
+        <nav class="menu">
+            <!-- side bar -->
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h2>STP Merch</h2>
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Product</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        });
+    </script>
+</body>
+
+</html>
